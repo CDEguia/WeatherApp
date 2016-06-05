@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Your Weather</title>
+</head>
+<body>
+
+<div class="jumbotron" id='backimage'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6  col-sm-6 col-md-5 col-lg-5 text-center vertical-align" id='output'>
+
+                <h2 id="Location" class="text"></h2>
+                <h1 class="text"><span id="city">Get Your Local Weather<span></h1>
+                <h6 class="text" style="display:inline">Lat: <span id='lat'><span></h6>
+                <h6 class="text" style="display:inline"> Lon: <span id='lon'> <span></h6>
+                <h2 class="text"><span id = 'genweather'><span></h2>
+                <h1 class="text">Temp: <span id = 'current'><span></h1>
+                <p class="text" style="display:inline">Min: <span id='min'> <span></p>
+                <p class="text" style="display:inline"> Max: <span id='max'> <span></p>
+                <button class = "btn center-block" id="cf">Alternate Units</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

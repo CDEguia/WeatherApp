@@ -87,7 +87,7 @@ var CtoF = function (num) {
     return num.replace(test, convert);
 }
 
-function winResize() {
+var winResize = function () {
     document.getElementById('backimage').style.height = window.innerHeight + 'px';
 }
 winResize();

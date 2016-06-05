@@ -86,13 +86,16 @@ var CtoF = function (num) {
     var test = /(-?\d+(?:\.\d*)?)°C\b/g;
     return num.replace(test, convert);
 }
-/*
+
 var winResize = function () {
     document.getElementById('backimage').style.height = window.innerHeight + 'px';
 }
-winResize();
-*/
+
 $(window).ready(function() {
+    winResize();
+    window.onresize = function() {
+        winResize();
+    };
     var loc = new findGeoLoc;
     getWeather(loc[0], loc[1]);
 
